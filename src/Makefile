@@ -4,7 +4,7 @@ WCS_INSTALL=/opt/local
 POSTGRESQL_HEADERS=/opt/local/include/postgresql93/server
 
 CC=cc
-CFLAGS=-fpic -I${WCS_DIR}/include -I${POSTGRESQL_HEADERS}
+CFLAGS=-fpic -I${WCS_INSTALL}/include -I${POSTGRESQL_HEADERS}
 BUNDLE_FLAGS=-bundle -flat_namespace -undefined suppress -lwcs -L${WCS_INSTALL}/lib
 
 
